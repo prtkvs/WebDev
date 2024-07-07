@@ -1,5 +1,5 @@
 //MAKE NOTE BY YOURSELF from code and notes
-// let msg= "  hell  o  "   ✅
+// let msg= "  hell  o  "   
 // msg.trim();  //'hell  o' --trims starting and ending part of the string  ✅
 //Syntax for lowercase and uppercase :--✅
 // let message= "Hello There";
@@ -9,36 +9,36 @@
 //message_chaining:--✅
 // let greet= "    hello   ";
 // console.log(greet.trim().toUpperCase()); //priority order from left to right  i.e first trimmed then uppercase
-//slice method:--
+//slice method:--✅
 // let msg = "Apna College"
 // console.log(msg.slice(5,11)); //Colleg since it requires index +1 value
 // console.log(msg.slice(5)); //College i.e if last tak print karwana ho to directly ye also method-2 for this is:
 // console.log(msg.slice(5,msg.length)); //College
 // console.log(msg.slice(-1)); //e i.e length - 1 value 
-// console.log(msg.replace("Apna","Mera")); //replace value //Note: Sirf first occurence uss word ka hi replace hoga sirf
-// console.log(msg.repeat(4)); //repeats 4 times //Apna CollegeApna CollegeApna CollegeApna College
+// console.log(msg.replace("Apna","Mera"));//Mera College✅ //replace value //Note: Sirf first occurence uss word ka hi replace hoga sirf
+// console.log(msg.repeat(4)); //repeats 4 times //Apna CollegeApna CollegeApna CollegeApna College✅
 // Arrays:--
 // let students= ["aman" , "shraddha" , "pandey"]; //collection of Strings
-// console.log(students); 
-//APART FROM C++/JAVA EXCEPTION: here we can make mixed array i.e we can store different types in same variable
-// let data= ["aman",21,98.4];  //mixed arrays
+// console.log(students); // ['aman', 'shraddha', 'pandey']
+//APART FROM C++/JAVA EXCEPTION: here we can make mixed array i.e we can store different types in same variable✅
+// let data= ["aman",21,98.4];  //mixed arrays✅
 // console.log(data);
-//methoda of arrays : Push Pop Unshift Shift
+//methoda of arrays : Push Pop Unshift Shift✅
 // // let cars = ["xuv","toyota","audi","bmw"];
 // console.log(cars); //['xuv', 'toyota', 'audi', 'bmw']
-// console.log(cars.push("ferrari")); //5 but when you type cars and enter ]'xuv', 'toyota', 'audi', 'bmw', 'ferrari'] always adds up in the end same goes for pop rejects from the end also returns its value
+// console.log(cars.push("ferrari")); //5 but when you type cars and enter ['xuv', 'toyota', 'audi', 'bmw', 'ferrari'] always adds up in the end same goes for pop rejects from the end also returns its value
 // console.log(cars.pop()); 
-//similarly in order to push in start use unshift and shift for end
-//better use of array methods:--
+//
+//better use of array methods:--✅
 // let followers = ["a","b","c"];
-// let blocked = followers.shift();
+// let blocked = followers.shift();  //it pops start
 // console.log(followers); ['b', 'c']
 // console.log(blocked); 'a'
-//indexOf and include
+//indexOf and include✅
 // let radhika = ["Jon", "Debu", "Brijesh"];
 // console.log(radhika.indexOf("Debu")); //1
 // console.log(radhika.includes("Neil")); //false
-//Slice in array :COPIES the values of an array
+//Slice in array :COPIES the values of an array ✅ completed above
 let colors = ["red","yellow","blue","green"];
 console.log(colors.slice()); //gives same as in of colors
 console.log(colors.slice(1,2));//yellow //since in slice(start,end) end value is exclusive therefore it will only give yellow
