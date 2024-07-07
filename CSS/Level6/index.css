@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin: 5px;
+}
+#heading{
+    text-align: center;
+}
+#container{
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: lavender;
+    display: flex;
+    flex-direction: row;
+    /* first by default column then flex gives by default row similarly we can use row reverse , column , column reverse in flex-direction */
+    /* justify-content: start; */
+    /* justify-content: end;*/
+    justify-content: center; 
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly;  */
+    /* justify content is used to align in main axis */
+    flex-wrap: wrap;
+    /* similarly we can use wrap reverse */
+    align-items: center;
+    /* align items are used to align in cross axis */
+    /* align-content: center; */
+}
+#box1{background-color: aqua;}
+#box2{
+    background-color: blueviolet;
+    align-self: flex-end;
+}
+#box3{background-color: yellow;}
+#box4{background-color: tomato;}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Active and Hover</title>
+    <style>
+.pseudo{
+    height: 25px;
+    width: 150px;
+    border: 2px solid chartreuse;
+    border-radius: 10px;
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
+    /* directly */
+    transition: all 0.25s ease-in-out 0s;
+}
+.pseudo:hover{
+    background-color: chartreuse;
+    height: 30px;
+    width: 160px;
+}
+.pseudo:active{
+    background-color: pink;
+    height: 30px;
+    width: 160px;
+}
+    </style>
+</head>
+<body>
+    <button class="pseudo">Pseudo class</button>
+</body>
+</html>

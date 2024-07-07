@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>position Property</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: seagreen;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#box1{
+    position: static;
+    /* default in document */
+}
+#box2{
+    position: relative;
+    top: 10px;
+    left: 50px;
+    /* apni position ke relative in document */
+}
+#box3{
+    position:absolute;
+    top:20px;
+    /* parent ke position pe depend karega aur ek level bahar aa jayega */
+}
+#box4{
+    position:fixed;
+    right:20px;
+    /* iski position fixed rahegi, isko scrool bar se koi fark nhi padega */
+}
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">BOX1</div>
+    <div id="box2" class="box">BOX2</div>
+    <div id="box3" class="box">BOX3</div>
+    <div id="box4" class="box">BOX4</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color:rgb(58, 96, 19);
+            text-align: center;
+            border: 5px solid black;
+            border-radius: 5px;
+            
+            /* display:block; */
+            /* ye already div me hota hai so koi jarurat nhi hai iski */
+            /* display: inline; */
+            /* jitna content hoga utna hi size lega and ek ke baad ek krke lagte rahenge line mein */
+            display: inline-block;
+        }
+        /* #box1{
+            /* display: none;  */
+            /* different from visiblity bcoz 
+            isme iske jagah pe box 2 aa jata hai rather visiblity me wo place khali rehta tha prr ispect me pata chalta tha ki waha pe hai */
+         
+    </style>
+</head>
+<body>
+ <div id="box1" class="box">Box 1</div>
+ <div id="box2" class="box">Box 2</div>   
+</body>
+</html>

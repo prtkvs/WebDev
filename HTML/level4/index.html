@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level : Final</title>
+</head>
+<body>
+    <!--This is an unordered list-->
+     <ul>
+        <li>Apple</li> 
+        <ul><li>colour: red</li>
+            <li>season : winter</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>Mango</li>
+        <ul><li>colour : yellow</li>
+            <li>season : summer</li>
+        </ul>
+    </ul>
+    <hr>
+    <!--This is ordered list-->
+     <ol>
+        <li>Apple</li> 
+        <ol><li>colour: red</li>
+            <li>season : winter</li>
+        </ol>
+    </ol>
+    <ol>
+        <li>Mango</li>
+        <ol><li>colour : yellow</li>
+            <li>season : summer</li>
+        </ol>
+    </ol>
+    <hr> 
+     <table>
+        <thead>
+        <caption>Student Data</caption>
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th> 
+        <th colspan="2">
+        Information
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Prateek</td>
+            <td><pre>    BTECH/10511/22</pre></td>
+        </tr>
+        </tbody>
+    </table> 
+
+
+<h1>Registration Form</h1>
+<form action="/action.php">
+    <input type= "text" placeholder="username">
+    <br>
+    <input type= "password" placeholder="passsword">
+    <br>
+    <h5>Select class:</h5>
+<label for="101"><!--if id and label name has same content then just by clicking in the name we can select the button-->
+    <input type="radio" value="classXI" name="class" id="101">classXI
+</label>
+<br>
+<label for="102">
+    <input type="radio" value="classXII" name="class" id="102">classXII
+</label>
+<!--check class&id from screenshot -->
+<h5>Select favourite subject:</h5>
+<label for="math">
+    <input type="checkbox" value="math" name="subject" id="101">math
+</label>
+<br>
+<label for="physics">
+    <input type="checkbox" value="physics" name="subject" id="102">physics
+</label>
+<br>
+<label for="chemistry">
+    <input type="checkbox" value="chemistry" name="subject" id="103">chemistry
+</label>
+<br>
+<label for="english">
+    <input type="checkbox" value="english" name="subject" id="104">english
+</label>
+<br>
+<label for="Computer Science">
+    <input type="checkbox" value="Computer Science" name="subject" id="104">Computer Science
+</label>
+<br>
+Select your city:
+<select name="city">
+    <option value="DELHI">DELHI</option>
+    <option value="MUMBAI">MUMBAI</option>
+    <option value="BANGALORE">BANGALORE</option>
+    <option value="INDORE">INDORE</option>
+    <option value="KOLKATA">KOLKATA</option>
+    <option value="CHENNAI">CHENNAI</option>
+    <option value="RANCHI">RANCHI</option>
+    <option value="PATNA">PATNA</option>
+</select>
+<br>
+<br>
+Feedback form:
+<textarea name="feedback" id="101" placeholder="please give your feedback here" row=5></textarea>
+<br>
+<input type="submit" value="submit">
+</form> 
+<br>
+<br>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/rZ41y93P2Qo?si=iY9dYVjzUYp55_tS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<video src="myvideo.mp4" width="560" height="315" controls loop>my video</video>
+
+</body>
+</html>

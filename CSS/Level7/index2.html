@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Transform</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            
+            transition: all 0.5s ease-in;
+        }
+        .box:hover{
+            /* transform: rotate(45deg); */
+            /* similarly we can do for x ,y and z axis  as rotatex/rotatey/rotatez*/
+            /* transform: scale(2); */
+            /* note: translate has by defalut value on x axis */
+            /* transform: translate(50px,50px); */
+            /* matlab x and y me 50 ox move kr rha hai */
+            transform: skew(45deg); 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">BOX</div>
+</body>
+</html>

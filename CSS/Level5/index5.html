@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Z index</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+}
+.box{
+    position: absolute;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+#box1{
+    background-color: red;
+    left: 20px;
+    right: 60px;
+    z-index: 2;
+}
+#box2{
+    background-color: aqua;
+    left: 60px;
+    top: 20px;
+    z-index: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">Z-index 2</div>
+        <div id="box2" class="box">Z-index 1</div>
+    </div>
+</body>
+</html>

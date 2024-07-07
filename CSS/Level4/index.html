@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .pad{
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+        padding: 2px;
+        /* just writing 2 px means sabhi side 2px hai */
+        /* top right bottom left */
+        /* box of content includes height width padding and border (not margin) */
+        /*therefore here area of box is 58*58*/ 
+    }
+        #first{ 
+        border: 2px solid ;
+        background-color: slateblue;
+        border-radius: 5px 15px 5px 5px;
+        box-sizing: border-box;
+        }
+        #second{
+            border: 2px dashed yellow;
+            background-color: brown;
+            border-radius: 12px;
+            box-sizing: content-box;
+        }
+        /* note: margin is size dependent  (socho) */
+</style>
+<body>
+   <div id="first" class="pad">Padding checker 1</div>
+   <div id="second" class="pad">Padding checker 2</div> 
+</body>
+</html>

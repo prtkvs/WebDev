@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative unit: Percentage</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+/* this defines the root element , here root element is "Body Text" */
+#first{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(223, 43, 43);
+    font-size: 10px;
+}
+#second{
+    width: 50%;
+    height: 60%;
+    /* percentage will always relative to the parent ,here parent is #first */
+    /* font-size: 25px;
+    isse size fix rahega */
+    /* font-size: 2.5em; */
+    /* 2.5 times the first font i.e its parent element*/
+    font-size: 2.5rem;
+    background-color: rgb(18, 25, 158);
+}
+    </style>
+</head>
+<body>
+    Body Text
+    <div id="first">first div
+    <div id="second">second div</div>
+    </div>
+</body>
+</html>

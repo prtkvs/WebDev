@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Property</title>
+    <style>
+        /* *{
+            color:coral;
+        } this is an Universal Selector which works for all styles and has the least priority.*/
+        /* h1{
+            color:red;
+        }
+        p{
+            color:orange;
+        } */
+        /* id selector */
+        #first_heading{
+            color:olivedrab;
+        }
+        /* class selector */
+        .first_text{
+             color:brown;              
+        }
+        /* #first_heading,.first_text{
+            color:aqua;            this is also called group selectors                  
+        } */
+        /* we can use descendant selector in order to apply on one certain tag only of same paragraph , it usses basic id only, jisme id define hogi sirf usme hi hoga rather ussi naam ke different tag mein nhi hoga jisme id/class defined nhi hai e.g <p> */
+    </style>
+    <link rel="stylesheet" href="index.css"> 
+    <!-- or just type link and enter -->
+</head>
+<body>
+    <!-- <div id="sample"></div> in order to write this just type #sample or else -->
+    <!-- <div class="sample"></div> similarly for class generation of div just type .sample -->
+    <h1 id="first_heading">This is the heading</h1>
+    <p class="first_text">This is my paragraph</p>
+    <h3 class="first_text">Example to verify class </h3> <!--as it  can be used for multiple tags-->
+    <!-- <h1 style="color:greenyellow">This is the same heading with different color as it contains the inline styling(with highest priority)</h1> -->
+    <h2>This is Heading2 with external styling</h2>
+    <!-- So priority order goes like Inline styling>Style tag>External styling. -->
+
+</body>
+</html>
