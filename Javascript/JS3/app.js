@@ -21,7 +21,7 @@
 // let students= ["aman" , "shraddha" , "pandey"]; //collection of Strings
 // console.log(students); 
 //APART FROM C++/JAVA EXCEPTION: here we can make mixed array i.e we can store different types in same variable
-// let data= ["aman",21,98.4];  //mixed array
+// let data= ["aman",21,98.4];  //mixed arrays
 // console.log(data);
 //methoda of arrays : Push Pop Unshift Shift
 // // let cars = ["xuv","toyota","audi","bmw"];
