@@ -91,3 +91,91 @@ function sum(a=3,b){
     console.log(a+b);
 }
 sum(2); //NaN since a =2 and b is undefined
+
+//SPREAD
+
+let array = [2,4,6,7,9,3,13,2,1];
+// Math.min(array[0],array[1],......)
+console.log(Math.min(...array));
+console.log(...array);  //2 4 6 7 9 3 13 2 1  used for printing numbers individually
+console.log(..."mera college"); //individual characters
+
+//SPREAD for Array literals
+let newArr = [1,2,3,4,5];
+let copy = [...newArr];
+copy.push(6);
+console.log(copy); //[1, 2, 3, 4, 5, 6] therefore can make its copy and make changes in it
+let char = [..."hello"];
+console.log(char); //['h', 'e', 'l', 'l', 'o']
+let odd = [1,3,5,7,9];
+let even = [2,4,6,8];
+let num = [...odd,...even];
+console.log(num); //[1, 3, 5, 7, 9, 2, 4, 6, 8] therefore order matters
+
+//SPREAD for Object literals
+const data ={
+    email : "abc@gmail.com",
+    password : "32456"
+}
+const dataCopy ={...data ,id : 23,country: "India"};  //copying data and adding new key:val 
+console.log(dataCopy); //{email: 'abc@gmail.com', password: '32456', id: 23, country: 'India'}
+
+let item = [1,2,3,4,5];
+let obj1 = {...item}; //obj -> key value therefore it will signify index also
+let obj2 = {..."hello"};
+console.log(obj2); //{0: 'h', 1: 'e', 2: 'l', 3: 'l', 4: 'o'}
+
+//REST
+function sum(...args){
+    for(let i = 0;i<args.length;i++){
+        console.log("you gave us: ",args[i]);
+    }
+}
+/*
+sum(1,3,4,5,2);
+app.js:131 you gave us:  1
+app.js:131 you gave us:  3
+app.js:131 you gave us:  4
+app.js:131 you gave us:  5
+app.js:131 you gave us:  2 
+*/
+function min(a,b,c,d){
+    console.log(arguments);
+    console.log(arguments.length);  //if min(2,3,1,3); then -> 4
+    arguments.push(2); //error since push is an array method but arguments is a collection
+} //therefore use rest before
+
+function add(...args){
+    return args.reduce((sum,el)=>sum +el);
+} //use add(2,4,5,6,...); to check sum value
+function mini (msg,...args){
+    console.log(msg);
+    return args.reduce((mini,el)=>{
+        if(mini>el){
+            return el;
+        }else{
+            return mini;
+        }
+    });         //mini("hello",9,3,2,1,3);  gives hello next line 1
+}
+
+//Destructuring
+
+let names = ["alice","bruce","steve","ben","gwen","shinchan","nobita","thor"];
+/*let winner = names[0];
+let runnerUp = names[1];
+let third = names[2];
+*/
+let [winner,runnerUp,third,...other]=names; //gets values index wise  just type third or winner to get names
+
+//Destructuring using Object literals
+const friend ={
+    name:"karan",
+    age : 21,
+    class : 12,
+    subjects : ["hindi","maths","physical_education"],
+    username : "karan@123",
+    password : "abcd",
+    city : "Delhi"
+};
+let {username,password:secret,city="Mumbai",city:place = "Gandhi Maidan",area="Boring Road"} = friend; //now password can be accessed via secret   and city ,place both will give delhi cuz here we can only initialise default values (if mentioned in the object then no use)
