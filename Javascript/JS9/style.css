@@ -1,7 +1,12 @@
 body {
     font-family: Arial;
   }
-  
+.green {
+    color : green;
+}
+.underline {
+    text-decoration: underline;
+}
   #mainImg {
     width: 35%;
   }
