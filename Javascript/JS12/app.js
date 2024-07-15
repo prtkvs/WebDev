@@ -113,6 +113,6 @@ let student = {
     name : "aman",
     marks : 98
 }
-// in console - JSON.stringify(student);       //'{"name":"aman","marks":98}'
+// in console - JSON.stringify(student);       //'{"name":"aman","marks":98}'..
 
 
