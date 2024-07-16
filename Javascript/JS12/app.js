@@ -115,4 +115,57 @@ let student = {
 }
 // in console - JSON.stringify(student);       //'{"name":"aman","marks":98}'..
 
+/*Testing API requests:(tools)
+1. Hoppscoth 2. Postman(requires sign in therefore we use hoppscoth)
+*/
 
+//AJAX (asynchronous javascript and XML) - overall process in which we request our api and get data
+//Why AJAX - coz when er are requesting APIs through our javascript then Apis are working asynchronously and return the response in JSON format (it was used to XML at older times therefore it's ajax but actually it's AJAJ)
+
+/*HTTPS Verbs:
+1. GET : whenever we put api link in format of https in hollscoth it converts it into json format , this process of getting is GET
+2. POST : alongwith our api request when we post our data also
+3. DELETE : we use it to delete our api request
+(we'll use this when we make our custom api into work)
+*/
+
+/* Status Codes (Main Examples):-
+1. 200 - OK (when api call is success)
+2. 404 - Not Found (when that api does not exit)
+3. 400 - Bad request
+4. 500 - Internal Server Error (error from the server side of api)
+*/
+/*
+Adding information in URLs 
+Query Strings - https://www.google.com/search?q=harry+porter
+where ?q= means query string which allows extra information inside that url(here, we used harry porter using this url to serch harry porter in google without actually writing it on searchbox) 
+in above link q = key , harry+porter = value
+?name=shraddha&marks=95 - example
+Note: if in any query string something is unrecognizable in API call then it ignores it and and based on useful info it gives results
+*/
+
+// document.write("hello");
+
+let url = "https://catfact.ninja/fact";
+/*
+async function getFacts(){
+   // let res = fetch(url); //since asynchronous function //will give undefined since it will take some time to call api but this statement will put immediately
+    let res = await fetch(url);
+    let data = await res.json(); //since asynchronous function
+   // console.log(data);
+    console.log(data.fact);
+} //call getFacts in console
+*/
+//if url is wrong so use try and catch
+async function getFacts(){
+    try{
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log(data.fact);
+        let res2 = await fetch(url);
+        let data2 = await res2.json();
+        console.log(data2.fact);
+    } catch(e){
+        console.log("error -", e);
+    }
+}
