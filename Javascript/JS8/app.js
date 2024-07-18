@@ -33,7 +33,6 @@ let gpa = student.map((el)=>{
     return el.marks/10;
 });
 //filter is use to make some changes
-let number = [1,2,3,4,5,6,7,8,9,10];
 let ans = nums.filter((el)=>{
     return el%2==0;
 });
@@ -52,7 +51,7 @@ let finalValue = int.reduce((acc,el)=>acc+el);
 console.log(finalValue); //15 but How?
 /*reason:
 initially at acc =0 therefore (0,1) -> zero for accumulator and 1 for element(first element of int[])
-therefore acc+el = 0+1=1 now accumulator updates to 2
+therefore acc+el = 0+1=1 now accumulator updates to 1
 therefore for next element acc+el = 1+2=3
 lly, 3+3=6
 lly, 6+4=10

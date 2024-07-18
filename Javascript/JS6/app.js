@@ -29,13 +29,13 @@ function concat(str){
     }
     return result;
 }/*
-//SCOPING:-
+//SCOPING:- check notes!!!
 let sum=54;   //GLOBAL SCOPE
 function calSum(a,b){
 //    let sum = a+b;  //FUNCTION SCOPE
     console.log(sum);
 }
-//calSum(3,4);//error since we cant access sum which is declared inside a scope 
+//calSum(3,4);
 console.log(sum);
 READ BLOCK SCOPING(you already know) AND LEXICAL SCOPING(nested function call(in can call out but not vice versa)) FROM NOTES
 

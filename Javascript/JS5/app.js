@@ -19,7 +19,7 @@ i.e. let rate = "price";
 1. item[rate];     //gives $32
 but 
 2. item.rate;      //ERROR
-Note: everything written inside sq. brackets for accesing particular objects are string neither an index nor a keyword,boolean E.g in item["null"]✅is not a boolean etc. but not in the case of the "." operator e.g item.null //gives ERROR
+Note: everything written inside sq. brackets for accesing particular objects are string, neither an index nor a keyword,boolean E.g in item["null"]✅is not a boolean etc. but not in the case of the "." operator e.g item.null //gives ERROR
 */
 //ADDING , UPDATING and DELETING VALUES:
 item.price= "87";      //updating(true for converting a number into string, array or else)

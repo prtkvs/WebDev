@@ -44,7 +44,7 @@ console.log(colors.slice()); //gives same as in of colors
 console.log(colors.slice(1,2));//yellow //since in slice(start,end) end value is exclusive therefore it will only give yellow
 console.log(colors.slice(2));//['blue', 'green']
 console.log(colors.slice(-1)); //['green']
-//splice in arrays : used to remove /replace/add elements in place. syntax slice(start,delete count ,item1,item2,.......itemN) each corresponds to remove replace and add elements respectively
+//splice in arrays : used to remove /replace/add elements in place. syntax splice(start,delete count ,item1,item2,.......itemN) each corresponds to remove replace and add elements respectively
 let newColors = ["blue","red","pink","orange","green","yellow"];
 console.log(newColors.splice(4));//(2) ['green', 'yellow'] 
 console.log(newColors.splice(0,1));//['blue'] //0 se delete krna start karo aur sirf ek delete kro //ye deleted value dikha raha hai

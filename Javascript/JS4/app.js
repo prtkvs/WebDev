@@ -1,11 +1,11 @@
-/*let heroes = [["batman" ,"superman" , "wonderwomen"],["spiderman" , "thor" , "captainAmerica"]];
-for (let i = 0; i < heroes.length; i++){
-    console.log(i,heroes[i],heroes.length);
-    for (let j = 0; j < heroes[i].length; j++) {
-        console.log(`j=${j},${heroes[i][j]}`);
+// let heroes = [["batman" ,"superman" , "wonderwomen"],["spiderman" , "thor" , "captainAmerica"]];
+// for (let i = 0; i < heroes.length; i++){
+//     console.log(i,heroes[i],heroes.length);
+//     for (let j = 0; j < heroes[i].length; j++) {
+//         console.log(`j=${j},${heroes[i][j]}`);
         
-    }
-}*/
+//     }
+// }
 /*
  use of $ literal :-
  1. const name = "Alice";
@@ -59,5 +59,5 @@ while(true){
         todo.splice(idx,1);
         console.log("deleted");
     }
-     req = prompt("please enter your request");
+     req = prompt("please enter your request again :");
 }
