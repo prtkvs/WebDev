@@ -70,7 +70,7 @@ now since we now did- style display none before Marvel Comics therefore we can s
 para.innerText="Hi! I'm Peter Parker"; //changes to this only
 para.innerText="Hi! I'm <b>Peter Parker</b>"; //prints - Hi! I'm <b>Peter Parker</b> since bold tag is not recognized by innerText
 para.innerHTML="Hi! I'm <b>Peter Parker</b>";  //now peter parker will be bold
-//tp underline heading:
+//to underline heading:
 let heading = document.querySelector('h1');
 //heading.innerHTML = "<u>Spider Man</u>";
 //method-2*** (no need to watch and learn heading name)
