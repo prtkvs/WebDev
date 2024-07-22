@@ -84,7 +84,7 @@ img.getAttribute(`id`);
 img.setAttribute(`id`,`spidermanImg`);  //id name changes using this and after doing this styling uski hat jayegi
 img.setAttribute(`src`,"creation_3.jpeg");
 img.getAttribute(`class`);
-img.setAttribute(`class`,`images`); //id name changes using this
+img.setAttribute(`class`,`images`); //class name changes using this
 */
 
 //MANIPULATING STYLES
@@ -142,7 +142,7 @@ img.previousElementSibling.style.color= "orange"; //Spider Man becomes orange
 */
 
 //ADDING ELEMENTS -used to create elements and after creating we insert them
-document.createElement('p'); //new paragrapg created <p></p>
+document.createElement('p'); //new paragraph created <p></p>
 let newP = document.createElement('p');
 console.dir(newP); //to check all items in p (mostly all null)
 newP.innerText= "Hi! I'm a new P";
