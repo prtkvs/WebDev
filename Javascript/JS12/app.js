@@ -120,7 +120,7 @@ let student = {
 */
 
 //AJAX (asynchronous javascript and XML) - overall process in which we request our api and get data
-//Why AJAX - coz when er are requesting APIs through our javascript then Apis are working asynchronously and return the response in JSON format (it was used to XML at older times therefore it's ajax but actually it's AJAJ)
+//Why AJAX - coz when we are requesting APIs through our javascript then Apis are working asynchronously and return the response in JSON format (it was used to XML at older times therefore it's ajax but actually it's AJAJ)
 
 /*HTTPS Verbs:
 1. GET : whenever we put api link in format of https in hollscoth it converts it into json format , this process of getting is GET
