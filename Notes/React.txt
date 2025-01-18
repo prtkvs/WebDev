@@ -1,0 +1,19 @@
+LECTURE - 2:
+• react comes with two attachments 1. React-DOM (for websites dev) 2. React Native (for mobile apps) 
+• in terminal write npx[(node package executer)(not npm (node package manager) because its kinda old and with npx we can directly install packages   and execute)] create-react-app 01basicreact. 
+• uss folder mein jaake - npm run start/build/etc. (check from package.json file inside "scripts".
+• create react app se karna is very bulky and takes very time therefore we use VITE
+• npm create vite@latest (enter - and fill out the details like name the folder 01vitereact and choose react framework etc.)
+• here also goto package.json file and check for scripts and run similarly -> npm run dev/build/start/etc. But before that you must goto that folder using cd command then npm install, after installation use npm run dev(check from scripts)
+• remove not useful folders like setupTests.js , reportWebVitals.js (used for tracking purposes), logo.svg, App.test.js, App.css and index.css and many more inside those folders.
+
+LECTURE - 3:
+• inside 01basicreact>public> [index.html] -> is called SPA (single page application).Why is it called so? since ye ek hi toh page hai jo load hoga.
+• In that index.html we see earlier theres <noscript> connecting javascript, so you will notice how index.js is loaded in src file ? so first we check in package.json file in dependencies you will se apart from react and react-dom theres a react-script . Due to this react-script ye jaake link kr deti hai usko js se (verify using inspect)
+• in case of 01vitereact index.html is outside only not in public
+• As we can do in basicreact similarly in vitereact folder inside src create chai.js and make a function chai(){return(<h3>chai aur react</h3>)} adn dont forget to export default Chai and now we'll send to App.jsx and main.jsx .Therefore at the top of app.jsx write import chai from "./chai" and remove everything from return in app.jsx then write <chai/>
+• Note: whenever we're making a component in we should take care of syntax for naming it in .jsx . Therefore change the name of chai.js to chai.jsx then when you will run again you will see that it still theresgives nothing as there, therfore you should be starting with uppercase letter for the name of the function named chai to Chai. Runned successfully.
+• Notice: you've had remove all the contents from return statement just to write <Chai/> bcoz if you will write anything else it will throw an error	because it says we've to return only one element therefore put all those in one div (ab sab ek hi element ke ander aa gye types), now it will run successfully. rather than <div>.....</div> you can just use fragments(called in react) i.e. <>....</>
+• But in 01basicreact theres restrictions of .jsx folder naming but capitalizing the first letter of the function name is compulsary here also.
+• Hence theres a good convention/practice that we must make the name of folder also with capital first letter(Chai.js) -> (obviously this will not give error for folder naming but still), so no doubt in naming functions.
+• In 01basicreact -> also if you name Chai.js to Chai.jsx there wont be any error (Hence, if any html is getting return we use jsx and if theres just js code no html is returning then we use js only
