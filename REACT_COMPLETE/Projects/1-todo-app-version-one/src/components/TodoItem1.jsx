@@ -4,11 +4,11 @@ function TodoItem1() {
 
   return (
     <div class="container">
-      <div class="row">
+      <div class="row prtk-row">
         <div class="col-6">{taskName}</div>
         <div class="col-4">{date}</div>
         <div class="col-2">
-          <button type="button" class="btn btn-danger">
+          <button type="button" class="btn btn-danger prtk-button">
             Danger
           </button>
         </div>

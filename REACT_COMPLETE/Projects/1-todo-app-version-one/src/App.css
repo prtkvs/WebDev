@@ -12,3 +12,10 @@ input{
 .items-container{
     text-align: left;
 }
+
+.prtk-button{
+    min-width: 80px;
+}
+.prtk-row{
+    margin: 10px 5px;
+}
