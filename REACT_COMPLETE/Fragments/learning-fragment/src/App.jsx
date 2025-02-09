@@ -7,7 +7,7 @@ import FoodInput from "./components/FoodInput";
 
 function App() {
   let foodItems = ["Sabzi","Green Vegetables","Roti","Salad","Milk","Ghee"];
-
+  let textToShow = "Food item entered by user";
 const handleOnChange = (event) =>{
   console.log(event.target.value);
 };
@@ -16,6 +16,7 @@ const handleOnChange = (event) =>{
     <>
     <Container>
       <h1 className="food-heading">Healthy Food</h1>
+      <p>{textToShow}</p>
       <ErrorMessage items ={foodItems}></ErrorMessage>
       <FoodInput handleOnChange={handleOnChange}></FoodInput>
       <FoodItems items ={foodItems}></FoodItems>
