@@ -3,14 +3,21 @@ import ErrorMessage from "./components/ErrorMessage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Container from "./components/Container";
+import FoodInput from "./components/FoodInput";
 
 function App() {
   let foodItems = ["Sabzi","Green Vegetables","Roti","Salad","Milk","Ghee"];
+
+const handleOnChange = (event) =>{
+  console.log(event.target.value);
+};
+
   return (
     <>
     <Container>
       <h1 className="food-heading">Healthy Food</h1>
       <ErrorMessage items ={foodItems}></ErrorMessage>
+      <FoodInput handleOnChange={handleOnChange}></FoodInput>
       <FoodItems items ={foodItems}></FoodItems>
     </Container>
 

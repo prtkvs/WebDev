@@ -1,6 +1,6 @@
 import styles from "./Item.module.css";
 
-const Item = ({ foodItem }) => {
+const Item = ({ foodItem, handledBuyButton }) => {
   const handleBuyButtonClicked = (event) => {
     console.log(event);
     console.log(`${foodItem} being bought`);
@@ -11,7 +11,7 @@ const Item = ({ foodItem }) => {
       <span className={styles["prtk-span"]}>{foodItem}</span>
       <button
         className={`${styles.button} btn btn-info`}
-        onClick={(event) => handleBuyButtonClicked(event)}
+        onClick={handledBuyButton}
       >
         Buy
       </button>
