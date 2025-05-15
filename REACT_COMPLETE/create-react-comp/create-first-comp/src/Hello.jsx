@@ -5,7 +5,7 @@ function Hello(){
         return "Prashant Sir";
     }
     return <p>
-       Message no.: {number} Hello this is {myName}, student of {fullName()}.
+       Message : {number} Hello this is {myName}, student of {fullName()}.
         
         </p>
 }
