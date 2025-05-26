@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {BiMessageAdd} from 'react-icons/bi'
 
 function AddTodo({ onNewItem }) {
@@ -18,6 +18,7 @@ function AddTodo({ onNewItem }) {
     onNewItem(todoName, dueDate);
     setDueDate("");
     setTodoName("");
+      
   };
 
   return (
