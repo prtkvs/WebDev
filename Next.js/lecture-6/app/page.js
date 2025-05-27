@@ -10,8 +10,8 @@ export default function Component() {
       <button onClick={() => signOut()}>Sign out</button>
     </>
   }
-  return <>
-    Not signed in <br/>
-    <button onClick={() => signIn()}>Sign in</button>
-  </>
+    return <>
+      Not signed in <br/>
+      <button onClick={() => signIn("github")}>Sign in using Github</button>
+    </>
 }

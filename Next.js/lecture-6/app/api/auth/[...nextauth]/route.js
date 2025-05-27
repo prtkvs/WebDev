@@ -5,8 +5,7 @@ import NextAuth from 'next-auth'
 // import EmailProvider from 'next-auth/providers/email'
 import GithubProvider from "next-auth/providers/github"
 
-
-export default NextAuth({
+const handler = NextAuth({
   providers: [
     // OAuth authentication providers...
     // AppleProvider({
@@ -32,3 +31,5 @@ export default NextAuth({
     })
   ]
 })
+
+export {handler as GET, handler as POST}
