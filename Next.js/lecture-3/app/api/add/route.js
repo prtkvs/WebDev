@@ -1,4 +1,6 @@
-// export async function GET(request) {}
+export async function GET(request) {
+    return new Response("This is GET response from add api");
+}
  
 // export async function HEAD(request) {}
  
